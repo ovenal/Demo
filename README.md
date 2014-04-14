@@ -7,13 +7,17 @@ Also there is a possibility to read previously stored data for further analisys 
 
 Usage example:
 - reads data about "snowboots" from zalando.be portal and saves these data to "sboots.csv" file
+  
   mvn clean compile exec:java -Dwebhost=http://www.zalando.be/ -Dstorage.label=sboots.csv -Dsection=snowboots
 
 - reads previously saved data from "sboots.csv"
+ 
   mvn clean compile exec:java -Dmode=read -Dstorage.label=sboots.csv
 
-- default parameters - reads data about maksi skirts from Britain Zalando and saves to "output.csv" file
+- default parameters - reads data about maksi skirts from British Zalando and saves to "output.csv" file
+  
   mvn clean compile exec:java from 
 
 - default parameters - reads saved data "output.csv" file
+  
   mvn clean compile exec:java -Dmode=read
